@@ -1,0 +1,22 @@
+body{
+    background-color: antiquewhite;
+
+}
+
+content {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+div {
+    border: 1px solid darkgray;
+}
+
+.item {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
