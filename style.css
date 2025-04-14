@@ -1,22 +1,62 @@
 body{
+    font-family: sans-serif;
     background-color: antiquewhite;
-
+    display: flex;
+    justify-self: center;
 }
 
 content {
-    width: 800px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
-
+/*Доп наочності роботи з блоками*/
 div {
     border: 1px solid darkgray;
 }
 
-.item {
+.title {
+    background: rgb(253, 48, 48);
+    width: auto;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.items {
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
+}
+
+.item {
+    width: 200px;
+    height: 320px;
+    margin-bottom: 10px;
+
+    border: 1px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 3);
+}
+
+.contacts p {
+    margin: 3px;
+}
+
+.contacts p:first-child {
+    font-weight: bold;
+}
+
+.contacts p:last-child {
+    border-left: 3px solid rgb(253, 48, 48);
+}
+
+.license {
+    font-size: 10px;
+    text-align: justify;
+    color: darkgrey;
 }
