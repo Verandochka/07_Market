@@ -1,4 +1,8 @@
 body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
     font-family: sans-serif;
     background-color: antiquewhite;
     display: flex;
@@ -6,15 +10,11 @@ body{
 }
 
 content {
-    width: 450px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-}
-/*Доп наочності роботи з блоками*/
-div {
-    border: 1px solid darkgray;
 }
 
 .title {
@@ -22,25 +22,101 @@ div {
     width: auto;
     color: aliceblue;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .items {
-    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
 }
 
 .item {
     width: 200px;
-    height: 320px;
+    height: 400px;
     margin-bottom: 10px;
+    padding: 10px;
 
-    border: 1px solid rgb(196, 194, 194);
+    background-color: rgb(255, 255, 255);
+
+    border: 1px solid rgb(194, 194, 194);
     border-radius: 5px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 3);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0, 3);
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.item-title{
+    font-weight: bold;
+}
+
+.item-image img{
+    height: 200px;
+}
+
+.parts-pay {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.parts-pay img{
+    height: 24px;
+}
+
+.price{
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.price div:first-child{
+    width: 100px;
+    font-size: 20px;
+}
+
+.price div:first-child span{
+    text-decoration-line: line-through;
+}
+
+.price div:first-child sup{
+    font-size: 12px;
+}
+
+.price div:last-child{
+    font-size: 24px;
+}
+
+.price div:last-child sup{
+    font-size: 14px;
+}
+
+.bonus {
+    background: rgb(253, 48, 48);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.bonus div:first-child {
+    width: 100px;
+    font-size: 14px;
+}
+
+.bonus div:last-child {
+    font-size: 24px;
+}
+
+.bonus div:last-child sup{
+    font-size: 14px;
 }
 
 .contacts p {
@@ -49,14 +125,15 @@ div {
 
 .contacts p:first-child {
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .contacts p:last-child {
     border-left: 3px solid rgb(253, 48, 48);
 }
 
-.license {
-    font-size: 10px;
+.info {
+    font-size: 9px;
     text-align: justify;
     color: darkgrey;
 }
