@@ -1,0 +1,11 @@
+[
+{
+    "id":1,
+    "title": "Мотокоса 43",
+    "photo": "img/мотокоса.jpg",
+    "lapka": "img/mono-lapka.png",
+    "basket": "img/shopping-cart.png",
+    "price": "5499",
+    "price-bonus": "4395"
+}
+]
