@@ -36,6 +36,7 @@ content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 100vh;
 }
 
 .item {
@@ -87,7 +88,7 @@ content {
     font-size: 20px;
 }
 
-.price div:first-child span{
+.standart-price{
     text-decoration-line: line-through;
 }
 
@@ -142,3 +143,14 @@ content {
     text-align: justify;
     color: darkgrey;
 }
+
+.item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-out, transform 0.6s ease-out;
+  }
+  
+  .item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
